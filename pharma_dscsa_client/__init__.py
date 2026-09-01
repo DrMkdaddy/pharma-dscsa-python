@@ -13,15 +13,15 @@ class PharmaDscsaClient:
     Client for FDA DSCSA & EU FMD Drug Serialization API (21 USC 360eee).
 
     :param api_key: RapidAPI key ('x-rapidapi-key').
-                    Get your key at: https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/us-fda-dscsa-eu-fmd-prescription-drug-serialization
-    :param base_url: Custom API endpoint override. Defaults to https://us-fda-dscsa-eu-fmd-prescription-drug-serialization.p.rapidapi.com.
-    :param rapidapi_host: RapidAPI host header. Defaults to us-fda-dscsa-eu-fmd-prescription-drug-serialization.p.rapidapi.com.
+                    Get your key at: https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee
+    :param base_url: Custom API endpoint override. Defaults to https://fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee.p.rapidapi.com.
+    :param rapidapi_host: RapidAPI host header. Defaults to fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee.p.rapidapi.com.
     """
     def __init__(
         self,
         api_key: Optional[str] = None,
         base_url: Optional[str] = None,
-        rapidapi_host: str = "us-fda-dscsa-eu-fmd-prescription-drug-serialization.p.rapidapi.com"
+        rapidapi_host: str = "fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee.p.rapidapi.com"
     ):
         self.api_key = api_key or os.environ.get("RAPIDAPI_KEY", "")
         self.rapidapi_host = rapidapi_host
@@ -31,9 +31,9 @@ class PharmaDscsaClient:
         if not self.api_key:
             return {
                 "success": False,
-                "error": "RapidAPI API key is required. Subscribe and obtain your key at: https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/us-fda-dscsa-eu-fmd-prescription-drug-serialization",
+                "error": "RapidAPI API key is required. Subscribe and obtain your key at: https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee",
                 "code": "MISSING_API_KEY",
-                "subscribe_url": "https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/us-fda-dscsa-eu-fmd-prescription-drug-serialization"
+                "subscribe_url": "https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee"
             }
 
         url = f"{self.base_url}/{endpoint.lstrip('/')}"
@@ -60,14 +60,14 @@ class PharmaDscsaClient:
                     "success": False,
                     "error": f"HTTP {e.code}: {e.reason}",
                     "code": f"HTTP_{e.code}",
-                    "upgrade_url": "https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/us-fda-dscsa-eu-fmd-prescription-drug-serialization"
+                    "upgrade_url": "https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee"
                 }
         except Exception as e:
             return {
                 "success": False,
                 "error": str(e),
                 "code": "NETWORK_ERROR",
-                "subscribe_url": "https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/us-fda-dscsa-eu-fmd-prescription-drug-serialization"
+                "subscribe_url": "https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee"
             }
 
     def get_health(self) -> Dict[str, Any]:

@@ -1,13 +1,14 @@
 Metadata-Version: 2.4
 Name: pharma-dscsa-client
-Version: 1.0.0
+Version: 1.0.1
 Summary: Official zero-dependency Python client for FDA DSCSA & EU FMD Drug Serialization API (21 USC 360eee) via RapidAPI
-Author: RapidAPI Microservices Portfolio
+Author: Noor Mkdad
 License-Expression: MIT
-Project-URL: Homepage, https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/us-fda-dscsa-eu-fmd-prescription-drug-serialization
-Project-URL: Documentation, https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/us-fda-dscsa-eu-fmd-prescription-drug-serialization
+Project-URL: Homepage, https://noormkdad.com/tools/pharma-dscsa
+Project-URL: Documentation, https://noormkdad.com/tools/pharma-dscsa
+Project-URL: Marketplace, https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/us-fda-dscsa-eu-fmd-prescription-drug-serialization
 Project-URL: Source, https://github.com/DrMkdaddy/pharma-dscsa-python
-Keywords: pharma-dscsa,rapidapi,sdk,api,validation,fintech
+Keywords: fda-dscsa,eu-fmd,serialization,epcis,21-usc-360eee,gtin,track-and-trace,ndc-converter,pharma
 Classifier: Programming Language :: Python :: 3
 Classifier: Operating System :: OS Independent
 Description-Content-Type: text/markdown
@@ -15,6 +16,7 @@ Description-Content-Type: text/markdown
 # FDA DSCSA & EU FMD Drug Serialization API (21 USC 360eee) — Python Client
 
 [![PyPI version](https://img.shields.io/pypi/v/pharma-dscsa-client.svg)](https://pypi.org/project/pharma-dscsa-client/)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/57865358-8bafe64c-1441-4fe3-ba7a-2d60bdeb7dc5)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![RapidAPI Listing](https://img.shields.io/badge/RapidAPI-Dedicated%20Listing-blueviolet)](https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/us-fda-dscsa-eu-fmd-prescription-drug-serialization)
 
@@ -69,4 +71,4 @@ Checks edge isolate health and responsiveness.
 - 📖 [RapidAPI Documentation & Key](https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/us-fda-dscsa-eu-fmd-prescription-drug-serialization)
 
 ## 📄 License
-MIT © RapidAPI Microservices Portfolio
+MIT © Noor Mkdad

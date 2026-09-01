@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pharma-dscsa-client"
-version = "1.0.0"
+version = "1.0.1"
 description = "Official zero-dependency Python client for FDA DSCSA & EU FMD Drug Serialization API (21 USC 360eee) via RapidAPI"
 readme = "README.md"
 authors = [{ name = "Noor Mkdad" }]
@@ -19,5 +19,5 @@ dependencies = []
 [project.urls]
 "Homepage" = "https://noormkdad.com/tools/pharma-dscsa"
 "Documentation" = "https://noormkdad.com/tools/pharma-dscsa"
-"Marketplace" = "https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/us-fda-dscsa-eu-fmd-prescription-drug-serialization"
+"Marketplace" = "https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee"
 "Source" = "https://github.com/DrMkdaddy/pharma-dscsa-python"
